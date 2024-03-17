@@ -1,0 +1,9 @@
+{
+    "editor.fontSize": 20,
+    "editor.wordWrapColumn": 77,
+    "html.format.wrapAttributes": "auto",
+    "html.format.wrapLineLength": 117,
+    "editor.quickSuggestionsDelay": 6,
+    "editor.overviewRulerBorder": false,
+    "editor.guides.bracketPairs": true
+}
