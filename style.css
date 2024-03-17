@@ -1,3 +1,4 @@
+
 * {
   font-family: "Segoe UI", Tahoma, Gothic, Verdana, sans-serif, sans-serif;
   margin: 0;
@@ -11,12 +12,12 @@
 
 :root {
   /* color scheme
-   #3b3486
-   #4b0082
-   #7743db
-   #ecd395
-   #fcfdf2
-   */
+#3b3486
+#4b0082
+#7743db
+#ecd395
+#fcfdf2
+*/
   --bg-color: #3b3486;
   --second-bg-color: #7743db;
   --text-color: #fcfdf2;
@@ -244,7 +245,7 @@ span {
 
 .portofolio-box:hover img {
   width: 100%;
- transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .portofolio-box .portofolio-layer {
@@ -256,53 +257,61 @@ span {
   background: linear-gradient(rgba(0, 0, 0, 0.5), var(--main-color));
   display: flex;
   justify-content: center;
-flex-direction: column;
-align-items: center;
-text-align: center;
-padding: 0 4rem;
-transform: translateY(100%);
-transition: .5s ease-out;
-}
-.portofolio-box:hover .portofolio-layer {
-transform:translateY(0) ;
-}
-.portofolio-layer h4{
-font-size: 3rem;
-}
-.portofolio-layer p{
-font-size: 1.6rem;
-margin: .3rem 0 1rem;
-}
-.portofolio-layer a{
-display: inline-flex;
-justify-content: center;
-align-items: center;
-width: 5rem;
-height: 5rem;
-background: var(--text-color);
-border-radius: 50%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: .5s ease-out;
 }
 
-.portofolio-layer a i{
-font-size: 2rem;
+.portofolio-box:hover .portofolio-layer {
+  transform: translateY(0);
+}
+
+.portofolio-layer h4 {
+  font-size: 3rem;
+}
+
+.portofolio-layer p {
+  font-size: 1.6rem;
+  margin: .3rem 0 1rem;
+}
+
+.portofolio-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: var(--text-color);
+  border-radius: 50%;
+}
+
+.portofolio-layer a i {
+  font-size: 2rem;
   color: var(--second-bg-color);
 }
 
-.contact h2{
+.contact h2 {
   margin-bottom: 3rem;
 }
-.contact form{
+
+.contact form {
   max-width: 70rem;
   margin: 1rem auto;
-text-align: center;
-margin-bottom: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
-.contact form .input-box{
+
+.contact form .input-box {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
-.contact form .input-box input,.contact form textarea{
+
+.contact form .input-box input,
+.contact form textarea {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
@@ -312,14 +321,164 @@ margin-bottom: 3rem;
   margin: 0.6rem 0rem;
 }
 
-.contact form .input-box input{
+.contact form .input-box input {
   width: 49%;
 }
 
-.contact form textarea{
+.contact form textarea {
   resize: none;
 }
-.contact form .btn{
+
+.contact form .btn {
   margin-top: 2rem;
   cursor: pointer;
+}
+
+/* https://github.com/Samuel-08/simplePortfolio.git */
+/* Media Queries */
+@media screen and (max-width: 768px) {
+
+  /* Header Styles */
+  .header {
+      padding: 1rem 5%;
+  }
+
+  .logo {
+      font-size: 2rem;
+  }
+
+  .navbar {
+      display: none;
+  }
+
+  /* Home Section Styles */
+  .home-content h1 {
+      font-size: 4rem;
+  }
+
+  .home-content h4 {
+      font-size: 2.4rem;
+  }
+
+  .home-img img {
+      width: 100%;
+      max-width: 100%;
+  }
+
+  .social-media a {
+      font-size: 1.8rem;
+  }
+
+  /* About Section Styles */
+  .about-content h2 {
+      font-size: 3.2rem;
+  }
+
+  .about-content h3 {
+      font-size: 2rem;
+  }
+
+  .about-content p {
+      font-size: 1.4rem;
+  }
+
+  /* Services Section Styles */
+  .services-container .services-box {
+      width: 100%;
+  }
+
+  /* Portfolio Section Styles */
+  .portofolio-container .portofolio-box {
+      width: 100%;
+  }
+
+  .portofolio-layer {
+      padding: 0 2rem;
+  }
+
+  .portofolio-layer h4 {
+      font-size: 2.4rem;
+  }
+
+  .portofolio-layer p {
+      font-size: 1.4rem;
+  }
+
+  .portofolio-layer a {
+      width: 4rem;
+      height: 4rem;
+  }
+
+  /* Contact Section Styles */
+  .contact form .input-box input,
+  .contact form textarea {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  /* Header Styles */
+  .header {
+      padding: 1rem 3%;
+  }
+
+  .logo {
+      font-size: 1.8rem;
+  }
+
+  /* Home Section Styles */
+  .home-content h1 {
+      font-size: 3.2rem;
+  }
+
+  .home-content h4 {
+      font-size: 2rem;
+  }
+
+  /* About Section Styles */
+  .about-content h2 {
+      font-size: 2.4rem;
+  }
+
+  .about-content h3 {
+      font-size: 1.6rem;
+  }
+
+  .about-content p {
+      font-size: 1.2rem;
+  }
+
+  /* Services Section Styles */
+  .services-container .services-box {
+      width: 100%;
+  }
+
+  /* Portfolio Section Styles */
+  .portofolio-container .portofolio-box {
+      width: 100%;
+  }
+
+  .portofolio-layer {
+      padding: 0 1rem;
+  }
+
+  .portofolio-layer h4 {
+      font-size: 2rem;
+  }
+
+  .portofolio-layer p {
+      font-size: 1.2rem;
+  }
+
+  .portofolio-layer a {
+      width: 3rem;
+      height: 3rem;
+  }
+
+  /* Contact Section Styles */
+  .contact form .input-box input,
+  .contact form textarea {
+      width: 100%;
+  }
 }
